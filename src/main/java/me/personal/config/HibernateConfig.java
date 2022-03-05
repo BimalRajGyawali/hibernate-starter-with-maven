@@ -22,6 +22,7 @@ public class HibernateConfig {
         properties.put(Environment.USER, "postgres");
         properties.put(Environment.PASS, "postgres");
         properties.put(Environment.SHOW_SQL, true);
+        properties.put(Environment.HBM2DDL_AUTO, "update");
 
         config.setProperties(properties);
         config.addAnnotatedClass(Customer.class);
